@@ -9,6 +9,8 @@ import {NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ProductService } from './products/shared/product.service';
 
 @NgModule({
   declarations: [
@@ -22,10 +24,11 @@ import { ProductListComponent } from './products/product-list/product-list.compo
     BrowserModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),
-    NgbModule
+    NgbModule,
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

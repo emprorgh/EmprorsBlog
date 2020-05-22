@@ -1,0 +1,39 @@
+[
+    {
+      "ProductID": 1,
+      "Product1": "sample string 2",
+      "QA_URL": "sample string 3",
+      "ProdDescription": "sample string 4",
+      "Notes": "sample string 5",
+      "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
+      "ReportPath": "sample string 7"
+    },
+    {
+      "ProductID": 1,
+      "Product1": "sample string 2",
+      "QA_URL": "sample string 3",
+      "ProdDescription": "sample string 4",
+      "Notes": "sample string 5",
+      "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
+      "ReportPath": "sample string 7"
+    },
+    {
+        "ProductID": 1,
+        "Product1": "sample string 2",
+        "QA_URL": "sample string 3",
+        "ProdDescription": "sample string 4",
+        "Notes": "sample string 5",
+        "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
+        "ReportPath": "sample string 7"
+      },
+      {
+        "ProductID": 1,
+        "Product1": "sample string 2",
+        "QA_URL": "sample string 3",
+        "ProdDescription": "sample string 4",
+        "Notes": "sample string 5",
+        "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
+        "ReportPath": "sample string 7"
+      }
+    
+  ]
