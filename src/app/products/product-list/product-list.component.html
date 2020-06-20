@@ -1,6 +1,23 @@
-<p>product-list works!</p>
-<h2>Product List</h2>
-<ul *ngFor="let product of products">
+<h2 style="padding-top: 50px;">Product List Component</h2>
+<!-- <table class="table table-sm table-hover">
+    <th>Application ID</th>
+    <th>Application Name</th>
+    <th>Web Address</th>
+    <th>Description</th>
+    <th>Notes</th>
+    <th>Created Date</th>
+    <th>Report Path</th>
+    <tr *ngFor="let product of products">
+      <td>{{product.ProductID}}</td> 
+      <td>{{product.Product1}}</td>
+      <td>{{product.QA_URL}}</td>
+      <td>{{product.ProdDescription}}</td>
+      <td>{{product.Notes}}</td>
+      <td>{{product.CreateDate}}</td>
+      <td>{{product.ReportPath}}</td>
+    </tr>
+  </table> -->
+<!-- <ul *ngFor="let product of products">
     <li>{{product.ProductID}}</li>
     <li>{{product.Product1}}</li>
     <li>{{product.QA_URL}}</li>
@@ -10,4 +27,19 @@
     <li>{{product.ReportPath}}</li>
 
 
-</ul>
+</ul> -->
+
+<div>    
+    <a class="btn btn-link" routerLink="/product">Add New</a>   
+  </div> 
+  <br>
+<ag-grid-angular
+      style="width: auto; height: 500px;"
+      class="ag-theme-alpine"
+      [enableSorting] = "true"
+      [rowData]= "products"
+      [columnDefs]="productsHeader"
+      [paginationPageSize]="25"
+      [pagination]="true">
+  </ag-grid-angular>
+ 

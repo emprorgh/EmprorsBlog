@@ -1,39 +1,102 @@
 [
     {
       "ProductID": 1,
-      "Product1": "sample string 2",
-      "QA_URL": "sample string 3",
-      "ProdDescription": "sample string 4",
-      "Notes": "sample string 5",
-      "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
-      "ReportPath": "sample string 7"
+      "Product1": "PatentAdvisor",
+      "QA_URL": "C:\\SujanProject\\SingleSource20190327134740.html",
+      "ProdDescription": "LexisNexis PatentAdvisor",
+      "Notes": null,
+      "CreateDate": "2016-11-14T16:45:20",
+      "ReportPath": "\\RT\\some"
     },
     {
-      "ProductID": 1,
-      "Product1": "sample string 2",
-      "QA_URL": "sample string 3",
-      "ProdDescription": "sample string 4",
-      "Notes": "sample string 5",
-      "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
-      "ReportPath": "sample string 7"
+      "ProductID": 2,
+      "Product1": "NetSuite",
+      "QA_URL": "https://system.sandbox.netsuite.com",
+      "ProdDescription": "NetSuite",
+      "Notes": "",
+      "CreateDate": "2016-12-22T09:54:04.57",
+      "ReportPath": null
     },
     {
-        "ProductID": 1,
-        "Product1": "sample string 2",
-        "QA_URL": "sample string 3",
-        "ProdDescription": "sample string 4",
-        "Notes": "sample string 5",
-        "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
-        "ReportPath": "sample string 7"
-      },
-      {
-        "ProductID": 1,
-        "Product1": "sample string 2",
-        "QA_URL": "sample string 3",
-        "ProdDescription": "sample string 4",
-        "Notes": "sample string 5",
-        "CreateDate": "2020-05-21T19:42:45.4245892-04:00",
-        "ReportPath": "sample string 7"
-      }
+      "ProductID": 3,
+      "Product1": "PatentAdvisor2.0",
+      "QA_URL": "https://paqatsvr.lnipsolutions.com",
+      "ProdDescription": "LexisNexis PatentAdvisor",
+      "Notes": "New UI",
+      "CreateDate": "2017-02-13T13:47:28.773",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 4,
+      "Product1": "GRDM",
+      "QA_URL": "https://grdmqat.reedtech.com",
+      "ProdDescription": "GRDM",
+      "Notes": "",
+      "CreateDate": "2017-04-20T17:53:58.37",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 5,
+      "Product1": "Navigator",
+      "QA_URL": "https://mdaqat.reedtech.com",
+      "ProdDescription": "Navigator for Medical Devices",
+      "Notes": "NavMD = Navigator for Medical Devices",
+      "CreateDate": "2017-10-31T19:46:19.459438",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 6,
+      "Product1": "PatentBread",
+      "QA_URL": null,
+      "ProdDescription": "Patent Bread",
+      "Notes": null,
+      "CreateDate": "2018-05-18T19:28:27.7804888",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 7,
+      "Product1": "PatentButter",
+      "QA_URL": null,
+      "ProdDescription": "Patent Butter",
+      "Notes": null,
+      "CreateDate": "2018-05-18T19:28:41.2175244",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 8,
+      "Product1": "eTable",
+      "QA_URL": "desktop app",
+      "ProdDescription": "Patent Bread",
+      "Notes": "",
+      "CreateDate": "2018-10-04T14:50:40.703",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 9,
+      "Product1": "NavDL",
+      "QA_URL": "",
+      "ProdDescription": "PDR3D",
+      "Notes": "",
+      "CreateDate": "2018-10-25T14:42:53.56",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 10,
+      "Product1": "eHeader",
+      "QA_URL": "desktop app",
+      "ProdDescription": "eHeader",
+      "Notes": "",
+      "CreateDate": "2018-10-25T16:15:16.777",
+      "ReportPath": null
+    },
+    {
+      "ProductID": 11,
+      "Product1": "SingleSource",
+      "QA_URL": "\\\\rtqals057b\\C$\\QA\\Selenium\\GRDM\\",
+      "ProdDescription": "SingleSource",
+      "Notes": null,
+      "CreateDate": "2018-11-09T10:32:58",
+      "ReportPath": null
+    }
     
   ]

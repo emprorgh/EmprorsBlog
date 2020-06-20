@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-
+import { ChartsModule } from 'ng2-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AgGridModule} from 'ag-grid-angular';
@@ -11,6 +12,11 @@ import { ProductComponent } from './products/product/product.component';
 import { ProductListComponent } from './products/product-list/product-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ProductService } from './products/shared/product.service';
+import {RouterModule} from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BatchrunComponent } from './batchrun/batchrun.component';
+import { ToolsComponent } from './tools/tools.component';
+
 
 @NgModule({
   declarations: [
@@ -18,17 +24,28 @@ import { ProductService } from './products/shared/product.service';
     MainNavbarComponent,
     ProductsComponent,
     ProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    DashboardComponent,
+    BatchrunComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AgGridModule.withComponents([]),
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([]),
+    ChartsModule,
+    FormsModule
+    
 
   ],
-  providers: [ProductService],
+  providers: [
+    ProductService
+    
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

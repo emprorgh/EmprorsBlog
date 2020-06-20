@@ -1,0 +1,30 @@
+
+
+<div class="container-fluid">
+    <h1 style="padding-top: 50px;">Hello, User!</h1>
+    <p>Welcome to Reedtech Automation reporting application developed By Sujan Ghimire. Here you can see Automation run reports, current application RT supports
+        , Test scripts per each application and total number of automated tests by products.
+      </p>
+    <div class="row">
+        <div class="col-sm-6" style="background-color:lavender;">
+            <div class="chart-wrapper" style="padding-left: 80px;">
+                <canvas baseChart 
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType">
+            </canvas>
+            </div>
+        </div>
+     <div class="col-sm-6" style="background-color:lavenderblush;">
+        <div class="chart-wrapper" style="padding-left: 80px;">
+            <canvas baseChart 
+             [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            >
+          </canvas>
+        </div>
+    </div>
+    </div>
+  </div>
+

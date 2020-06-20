@@ -1,19 +1,19 @@
 
 <div class="container">
-  <p style="padding-top: 80px;">Welcome to Reedtech Automation reporting application developed By Sujan Ghimire. Here you can see Automation run reports, current application RT supports
-    , Test scripts per each application and total number of automated tests by products.
-  </p>
+  
   <main-navbar></main-navbar>
-  <ag-grid-angular
+  <!-- <app-dashboard></app-dashboard> -->
+  <!-- <ag-grid-angular
       style="width: auto; height: 500px;"
       class="ag-theme-alpine"
       [enableSorting] = "true"
       [rowData]="rowData"
       [columnDefs]="columnDefs"
       >
-  </ag-grid-angular>
-  <app-products></app-products>
-  <app-product></app-product>
-  <app-product-list></app-product-list>
+  </ag-grid-angular> -->
+  <!-- <app-product-list></app-product-list> -->
+  <!-- <app-products></app-products> -->
+ 
+  <router-outlet></router-outlet>  
   
 </div>

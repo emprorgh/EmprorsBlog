@@ -1,0 +1,16 @@
+
+    <h1 style="padding-top: 50px;">TFS Report</h1>
+    <p>Generate all fancy reports for Anthony with button clicks.</p>  
+
+<ag-grid-angular
+    style="width: auto; height: 500px;"
+    class="ag-theme-alpine"
+    [enableSorting] = "true"
+    [rowData]= "testCaseData"
+    [columnDefs]="testCaseDataGridHeader"
+    [paginationPageSize]="25"
+    [pagination]="true">
+</ag-grid-angular>
+  
+
+  

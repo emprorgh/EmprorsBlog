@@ -1,6 +1,6 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">RTAutomationReport</a>
+  <a routerLink="/dashboard" routerLinkActive="active" class="navbar-brand" >RTAutomationReport</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,7 +8,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
         <li ngbDropdown class="nav-item active">
-            <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Applications</a>
+            <a routerLink="/product-list" routerLinkActive="active" ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >APPLICATIONS</a>
             <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
@@ -16,13 +16,13 @@
             </div>
         </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a routerLink="/batchrun" routerLinkActive="active"class="nav-link" href="#">NIGHTLY REPORTS<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">TEST SCRIPTS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a routerLink="/tools" routerLinkActive="active" class="nav-link" tabindex="-1">TOOLS</a>
       </li>
       
     </ul>
