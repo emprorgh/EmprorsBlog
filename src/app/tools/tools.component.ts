@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToolsService } from './tools.service';
+import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-tools',
@@ -8,11 +9,12 @@ import { ToolsService } from './tools.service';
 })
 export class ToolsComponent implements OnInit {
 
+  model: NgbDateStruct;
   public testCaseData = [];
   public testCaseDataGridHeader = [
     { headerName: 'Test Case ID', field: 'Test Case ID', filter: true, resizable:true },
     { headerName: 'Test Case Title', field: 'Test Case Title' },
-    { headerName: 'Automation Status', field: 'Automation Status'},
+    { headerName: 'Automation Status', field: 'Automation Status', filter: true},
     { headerName: 'Automated Test Name', field: 'Automated Test Name' },
     { headerName: 'Automated By', field: 'Automated By' },
     { headerName: 'Authored By', field: 'Authored By' },
@@ -25,7 +27,7 @@ export class ToolsComponent implements OnInit {
   constructor(private toolsService : ToolsService) { }
 
   ngOnInit() {
-    this.toolsService.getTestCaseData()
+    this.toolsService.getTestCaseData("68355", "01/01/2020")
       .subscribe(data => this.testCaseData = data);
   }
 

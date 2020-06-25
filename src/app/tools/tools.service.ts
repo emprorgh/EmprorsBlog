@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -8,11 +8,16 @@ import { Observable } from 'rxjs';
 export class ToolsService {
 
   //private _url: string = "/assets/products.json";
+  planId : string
+  planDate : string
   private _url: string = "https://localhost:44366/TestCasesByPlanIdAndDate";
   //formData : Product;
   constructor(private http : HttpClient) { }
 
-  getTestCaseData() : Observable<any>{  
-    return this.http.get<any>(this._url);
+  getTestCaseData(planId, planDate) : Observable<any>{ 
+    let params = new HttpParams();
+    params = params.append('planId', planId);
+    params = params.append('date', planDate);
+    return this.http.get<any>(this._url, {params:params});
   }
 }
