@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToolsService } from './tools.service';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-tools',
@@ -9,26 +10,38 @@ import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 })
 export class ToolsComponent implements OnInit {
 
-  model: NgbDateStruct;
   public testCaseData = [];
+  testCaseForm :NgForm;
+  planId : string;
+  date : string ;
   public testCaseDataGridHeader = [
-    { headerName: 'Test Case ID', field: 'Test Case ID', filter: true, resizable:true },
-    { headerName: 'Test Case Title', field: 'Test Case Title' },
-    { headerName: 'Automation Status', field: 'Automation Status', filter: true},
-    { headerName: 'Automated Test Name', field: 'Automated Test Name' },
-    { headerName: 'Automated By', field: 'Automated By' },
-    { headerName: 'Authored By', field: 'Authored By' },
+    { headerName: 'Test Case ID', field: 'TestCaseID', filter: true, resizable:true },
+    { headerName: 'Test Case Title', field: 'TestCaseTitle' },
+    { headerName: 'Automation Status', field: 'AutomationStatus', filter: true},
+    { headerName: 'Automated Test Name', field: 'AutomatedTestName' },
+    { headerName: 'Automated By', field: 'AutomatedBy' },
+    { headerName: 'Authored By', field: 'AuthoredBy' },
     { headerName: 'Priority', field: 'Priority' },
-    { headerName: 'Tags', field: 'Tags' },
-    { headerName: 'Test Result', field: 'Test Result' },
-    { headerName: 'Test User', field: 'Test User' },
-    { headerName: 'Test Date', field: 'Test Date' },
+    { headerName: 'Tags', field: 'tags' },
+    { headerName: 'Test Result', field: 'TestResult' },
+    { headerName: 'Test User', field: 'TestUser' },
+    { headerName: 'Test Date', field: 'TestDate' },
   ];
   constructor(private toolsService : ToolsService) { }
 
   ngOnInit() {
-    this.toolsService.getTestCaseData("68355", "01/01/2020")
-      .subscribe(data => this.testCaseData = data);
+    
+    /* this.toolsService.getTestCaseData("68355", "12/12/2019")
+      .subscribe(data => this.testCaseData = data); */
   }
 
-}
+  onSubmit() {
+    
+    this.toolsService.getTestCaseData(this.planId, this.date)
+    .subscribe(data => this.testCaseData = data);
+        
+        
+      }
+    }
+
+

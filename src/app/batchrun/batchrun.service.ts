@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class BatchrunService {
 
     //private _url: string = "/assets/products.json";
-   private _url: string = "https://localhost:44366/AutomationRunByApplication";
+   //private _url: string = "https://localhost:44366/AutomationRunByApplication";
    /* formData : Product;
    constructor(private http : HttpClient) { }
  

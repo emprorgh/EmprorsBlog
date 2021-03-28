@@ -10,7 +10,7 @@ import { MultiDataSet, Label } from 'ng2-charts';
 export class DashboardComponent implements OnInit {
 
   public chartData = [(Math.random()*100 + 1), (Math.random()*100 + 1)];
-  public chartDataLabels = ['PASS', 'FAIL'];
+  public chartDataLabels = ['Automation', 'Manual'];
   constructor() { }
 
   ngOnInit() {

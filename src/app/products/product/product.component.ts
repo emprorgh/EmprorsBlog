@@ -12,6 +12,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
+  toastr: any;
 
   constructor(private productService : ProductService) { }
   productPost: Product;
@@ -50,7 +51,7 @@ export class ProductComponent implements OnInit {
         .subscribe(data => {
           this.resetForm(form);
           this.productService.getProducts();
-          //this.toastr.success('New Record Added Succcessfully', 'Employee Register');
+          this.toastr.success('New Record Added Succcessfully', 'Employee Register');
         })
       }
 }

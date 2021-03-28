@@ -1,32 +1,30 @@
 
-    <h1 style="padding-top: 50px;">TFS Report</h1>
-    <p>Generate all fancy reports for Anthony with button clicks.</p>  
+    <h1 style="padding-top: 50px;">Different things here</h1>
+    <p>Call weather and stock APIs. coming soon</p>  
 
     <ngb-tabset type="pills">
-        <ngb-tab title="Test Cases report">
+        <ngb-tab title="Stocks">
           <ng-template ngbTabContent>
-            <form #testCaseForm = "ngForm"class="form-inline">
+            <form #testCaseForm = "ngForm">
                 <div class="form-group">
                   <div class="input-group">
-                    <input class="form-control" placeholder="Test Plan ID"
-                    name="testPlanId">
-                    <input class="form-control" placeholder="yyyy-mm-dd"
-                           name="date" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                    <input [(ngModel)]="planId" class="form-control" placeholder="Enter some"
+                    name="testPlanId" id="tp1" type="number">
+                              
+                    <input [(ngModel)]="date" class="form-control" placeholder="yyyy-mm-dd"
+                           name="date" ngbDatepicker #d="ngbDatepicker" required id="date1" type="text">
+                    <p id="demo2"></p>
                     <button class="btn btn-outline-secondary calendar" (click)="d.toggle()"><i class="far fa-calendar-alt"></i></button>
                     <div class="input-group-append">
-                      <button class="btn btn-outline-secondary calendar" type="button">
+                      <button class="btn btn-outline-secondary calendar" onsubmit="showvalidationMessage()" type="button" (click)="onSubmit()" style="background-color:lightseagreen; color: floralwhite;">
                         <i class="fa fa-floppy-o"></i>Submit</button>
                     </div>
                   </div>
                 </div>
               </form>
               <hr/> 
-              <ngb-alert class="mt-3 mb-0" type="info" [dismissible]="true">
-                You must provide the icon for the button. This allows you
-                to choose an icon that matches your application's style.
-                In this example, the icon is set via a CSS class.
-              </ngb-alert>
-            <ag-grid-angular
+            <!-- Uncomment this to see the grid. -->
+            <!-- <ag-grid-angular
                 style="width: auto; height: 500px;"
                 class="ag-theme-alpine"
                 [enableSorting] = "true"
@@ -34,17 +32,17 @@
                 [columnDefs]="testCaseDataGridHeader"
                 [paginationPageSize]="25"
                 [pagination]="true">
-            </ag-grid-angular>
+            </ag-grid-angular> -->
           </ng-template>
         </ngb-tab>
         <ngb-tab>
-          <ng-template ngbTabTitle>Story</ng-template>
+          <ng-template ngbTabTitle>Weather</ng-template>
           <ng-template ngbTabContent>
             <p></p>
           </ng-template>
         </ngb-tab>
         <ngb-tab >
-            <ng-template ngbTabTitle>Sprint Items</ng-template>
+            <ng-template ngbTabTitle>News</ng-template>
            <ng-template ngbTabContent>
             <p></p>
           </ng-template>

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { DatePipe } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -8,9 +9,7 @@ import { Observable } from 'rxjs';
 export class ToolsService {
 
   //private _url: string = "/assets/products.json";
-  planId : string
-  planDate : string
-  private _url: string = "https://localhost:44366/TestCasesByPlanIdAndDate";
+   private _url: string = "http://localhost:3000/testCaseReport";
   //formData : Product;
   constructor(private http : HttpClient) { }
 
