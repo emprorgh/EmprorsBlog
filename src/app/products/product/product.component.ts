@@ -14,7 +14,7 @@ import { NgForm } from '@angular/forms';
 export class ProductComponent implements OnInit {
   toastr: any;
 
-  constructor(private productService : ProductService) { }
+  constructor(public productService : ProductService) { }
   productPost: Product;
    
   ngOnInit() {
