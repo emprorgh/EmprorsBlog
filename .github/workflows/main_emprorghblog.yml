@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '14.x'
+        node-version: '12.x'
 
     - name: npm install, build, and test
       run: |
@@ -34,7 +34,7 @@ jobs:
         path: .
 
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: build
     environment:
       name: 'production'
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'emprorghblog'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_36432dc53d084da19f4a4da431c8f56f }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1d9075b73ec4483db6cf395c48eada02 }}
         package: .
